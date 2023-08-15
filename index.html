@@ -86,20 +86,30 @@
   }
 
   .blue-white {
+    display: none;
     width: 200px;
     height: 200px;
     background: linear-gradient(blue, white);
   }
 
+  .blue-white-sm {
+    display: block;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    max-height: 60px;
+    background: linear-gradient(blue, white);
+  }
+
   h1 {
     color: #000080;
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .page {
     width: 100%;
     max-width: 920px;
-    /* padding: 20px; */
+    padding: 20px;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
   }
 
@@ -265,6 +275,10 @@
   }
 
   @media(min-width: 768px) {
+    h1 {
+      font-size: 30px;
+    }
+
     .md-fdr {
       flex-direction: row;
     }
@@ -276,6 +290,53 @@
     .md-gy-5 {
       row-gap: 40px;
     }
+
+    .blue-white {
+      display: block;
+    }
+
+    .blue-white-sm {
+      display: none;
+    }
+  }
+
+
+  @media(max-width: 768px) {
+
+    body,
+
+    p {
+      font-size: 9px;
+    }
+
+    td,
+    th {
+      font-size: 6px;
+    }
+
+    td input[type="text"] {
+      width: 60%;
+    }
+
+    input.blank {
+      padding: 5px 0;
+    }
+
+    .pill {
+      padding: 3px 5px;
+    }
+
+    td div input {
+      width: 15px;
+    }
+
+    .page {
+      padding: 0px;
+    }
+
+    body {
+      padding: 2px;
+    }
   }
 </style>
 
@@ -285,11 +346,13 @@
     <!-- heading and gradiant -->
     <div class="df fdcr md-fdr aic md-ais">
       <div class="df fdc">
-        <div class="b1 p5">
+        <div class="df b1 p5">
           <h1>
             Automated External Defibrillator (AED)
             Equipment Inspection Report
           </h1>
+          <div class="b1 blue-white-sm"></div>
+
         </div>
         <div class="b1 p5">
           <p>
@@ -401,114 +464,55 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td><input type="text" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -519,114 +523,55 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td><input type="text" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -637,114 +582,55 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td><input type="text" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -755,114 +641,55 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td><input type="text" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -873,114 +700,55 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td><input type="text" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -991,114 +759,55 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td><input type="text" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -1109,114 +818,55 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td><input type="text" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -1227,114 +877,55 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td><input type="text" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -1345,114 +936,55 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td><input type="text" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
-                Yes
-                <input type="checkbox" />
-              </div>
-            </td>
-            <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -1463,55 +995,586 @@
             <td><input type="text" /></td>
             <td><input type="text" /></td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
             </td>
             <td>
-              <div class="df jcc">
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
+                Yes
+                <input type="checkbox" />
+              </div>
+            </td>
+            <td>
+              <div class="df jcc aic">
                 Yes
                 <input type="checkbox" />
               </div>
@@ -1544,41 +1607,19 @@
             <tr>
               <td><input type="text" /></td>
               <td>
-                <div class="df">
+                <div class="df jcc aic">
                   Yes
                   <input type="checkbox" />
                 </div>
               </td>
               <td>
-                <div class="df">
+                <div class="df jcc aic">
                   Yes
                   <input type="checkbox" />
                 </div>
               </td>
               <td>
-                <div class="df">
-                  Yes
-                  <input type="checkbox" />
-                </div>
-              </td>
-              <td><input type="text" /></td>
-            </tr>
-            <tr>
-              <td><input type="text" /></td>
-              <td>
-                <div class="df">
-                  Yes
-                  <input type="checkbox" />
-                </div>
-              </td>
-              <td>
-                <div class="df">
-                  Yes
-                  <input type="checkbox" />
-                </div>
-              </td>
-              <td>
-                <div class="df">
+                <div class="df jcc aic">
                   Yes
                   <input type="checkbox" />
                 </div>
@@ -1588,19 +1629,41 @@
             <tr>
               <td><input type="text" /></td>
               <td>
-                <div class="df">
+                <div class="df jcc aic">
                   Yes
                   <input type="checkbox" />
                 </div>
               </td>
               <td>
-                <div class="df">
+                <div class="df jcc aic">
                   Yes
                   <input type="checkbox" />
                 </div>
               </td>
               <td>
-                <div class="df">
+                <div class="df jcc aic">
+                  Yes
+                  <input type="checkbox" />
+                </div>
+              </td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td><input type="text" /></td>
+              <td>
+                <div class="df jcc aic">
+                  Yes
+                  <input type="checkbox" />
+                </div>
+              </td>
+              <td>
+                <div class="df jcc aic">
+                  Yes
+                  <input type="checkbox" />
+                </div>
+              </td>
+              <td>
+                <div class="df jcc aic">
                   Yes
                   <input type="checkbox" />
                 </div>
