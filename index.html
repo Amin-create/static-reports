@@ -97,9 +97,10 @@
   }
 
   .page {
+    width: 100%;
     max-width: 920px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* padding: 20px; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
   }
 
   body {
@@ -108,7 +109,7 @@
     align-items: center;
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
-    padding: 40px;
+    padding: 10px;
   }
 
   .p5 {
@@ -253,6 +254,12 @@
   .br-10 {
     border-radius: 10px;
   }
+
+  @media(min-width: 768px) {
+    .md-fdr {
+      flex-direction: row;
+    }
+  }
 </style>
 
 <body>
@@ -313,7 +320,7 @@
       </div>
     </div>
     <!-- 3 texts and two inputs -->
-    <div class="df jcs aic py-1">
+    <div class="df fdc md-fdr jcs aic py-1">
       <div class="b1 p5 br-10 tac">
         <p class="text-blue">AED Electrode Pads (Adult and Pediatric) must be packaged, in good condition, and have not
           expired. </p>
@@ -321,18 +328,19 @@
         <p class="text-blue text-bold">All emergency equipment must be in good, fully functional condition or
           immediately corrected / replaced.</p>
       </div>
-      <h5 class="text-bold blue-dark tac">
-        EXPIRATION <br>
-        DATES OF PADS
-      </h5>
-
-      <div class="df fdc jcc flex1 px10">
-        <h5 class="tac text-nowrap">ADULT PADS</h5>
-        <input type="text" class="blank" />
-      </div>
-      <div class="df fdc jcc flex1 px10">
-        <h5 class="tac text-nowrap">PEDIATRIC PADS*</h5>
-        <input type="text" class="blank" />
+      <div class="df fdr jcs aic">
+        <h5 class="text-bold blue-dark tac">
+          EXPIRATION <br>
+          DATES OF PADS
+        </h5>
+        <div class="df fdc jcc flex1 px10">
+          <h5 class="tac text-nowrap">ADULT PADS</h5>
+          <input type="text" class="blank" />
+        </div>
+        <div class="df fdc jcc flex1 px10">
+          <h5 class="tac text-nowrap">PEDIATRIC PADS*</h5>
+          <input type="text" class="blank" />
+        </div>
       </div>
     </div>
 
@@ -1497,7 +1505,7 @@
       </table>
     </div>
     <!-- two tables -->
-    <div class="w-100 df gx-1">
+    <div class="w-100 df fdc md-fdr gx-1">
       <div class="df fdc flex1 pt-1">
         <div class="pill">
           <h4>Periodic Supervisor Equipment Check</h4>
